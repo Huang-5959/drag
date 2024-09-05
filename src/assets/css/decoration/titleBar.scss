@@ -1,0 +1,21 @@
+// 标题栏
+
+@import '../mixins/mixins';
+@import '../mixins/utils.scss';
+
+@include b(titleBar) {
+  @include e(item) {
+    @include when(style-one) {
+      height: 44px;
+      text-align: center;
+    }
+
+    @include when(style-two) {
+      padding-left: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 4px solid red;
+    }
+  }
+}
